@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kingtalk.logging" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-################~##########"/>
+        <service android:name="com.kingtalk.logging.OpenUDID_service">
+            <intent-filter>
+                <action android:name="com.kingtalk.logging.OpenUDID.GETUDID" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>
+
